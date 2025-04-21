@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="headerAll">
+        <header>
+            <div>
+                <ul>
+                    <li class="forlogo"><a href=""><img src="../MainPage/imgs/logo.svg" alt=""></a></li>
+                    <li><form action=""><img src="../MainPage/imgs/search.png" alt=""><input type="text" placeholder="Поиск"></form></li>
+                    <li><a href=""><button>+380 630 130 103</button></a></li>
+                    <li><a href=""><img src="../MainPage/imgs/user.png" alt=""></a><button>RU/ENG</button></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href=""><button>Наборы</button></a></li>
+                    <li><a href=""><button>Все товары</button></a></li>
+                    <li><a href=""><button>Пошив</button></a></li>
+                    <li><button>Производство</button></li>
+                    <li><a href=""><button>Информация</button></a></li>
+                    <li>ШОППЕРЫ СО СКИДКОЙ -25%</li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <ul>
+                <li>КУПИТЬ ЧАШКУ С ЛОГОТИПОМ</li>
+                <li>Чашки с логотипом - это классика. Любая конференция или бизнес встреча не обойдется без данного реквизина. Так же  это прекрасный подарок для ваших сотрудников, деловых партнеров, друзей или постоянных клиентов . Владельцы заведений общественного питания могут заказать крупные партии чашек для своего ресторана или кафе. Также вы можете распространять эти изделия во время рекламных мероприятий, презентаций, выставок или конференций.</li>
+                <li><p>Показать еще</p></li>
+            </ul>
+            <ul id="photo">
+
+            </ul>
+        </main>
+    </section>
+    <div class="top-line" id="topLine"></div>
+
+            <ul class="menu" id="menu">
+                <li class="item" onclick="setActive(this); event.stopPropagation();">Все товары
+                    <ul class="submenu">
+                        <li>Худи на заказ</li>
+                        <li>Худи класс.</li>
+                        <li>Худи оверсайз</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="setActive(this); event.stopPropagation();">Толстовки
+                    <ul class="submenu">
+                        <li>Футболки обычные</li>
+                        <li>Футболки с принтом</li>
+                        <li>Футболки оверсайз</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="setActive(this); event.stopPropagation();">Свитшоты
+                    <ul class="submenu">
+                        <li>Поло</li>
+                        <li>Поло</li>
+                        <li>Поло</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="setActive(this); event.stopPropagation();">Футболки
+                    <ul class="submenu">
+                        <li>Поло</li>
+                        <li>Поло</li>
+                        <li>Поло</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="setActive(this); event.stopPropagation();">Поло
+                    <ul class="submenu">
+                        <li>Поло</li>
+                        <li>Поло</li>
+                        <li>Поло</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="setActive(this); event.stopPropagation();">Жилетки
+                    <ul class="submenu">
+                        <li>Поло</li>
+                        <li>Поло</li>
+                        <li>Поло</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="setActive(this); event.stopPropagation();">Рюкзаки
+                    <ul class="submenu">
+                        <li>Поло</li>
+                        <li>Поло</li>
+                        <li>Поло</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="setActive(this); event.stopPropagation();">Бананки
+                    <ul class="submenu">
+                        <li>Поло</li>
+                        <li>Поло</li>
+                        <li>Поло</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="setActive(this); event.stopPropagation();">Эко-сумки/Шопперы 
+                    <ul class="submenu">
+                        <li>Поло</li>
+                        <li>Поло</li>
+                        <li>Поло</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="setActive(this); event.stopPropagation();">Пледы 
+                    <ul class="submenu">
+                        <li>Поло</li>
+                        <li>Поло</li>
+                        <li>Поло</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="setActive(this); event.stopPropagation();">Носки 
+                    <ul class="submenu">
+                        <li>Поло</li>
+                        <li>Поло</li>
+                        <li>Поло</li>
+                    </ul>
+                </li>
+                <li class="item" onclick="setActive(this); event.stopPropagation();">Маски
+                    <ul class="submenu">
+                        <li>Поло</li>
+                        <li>Поло</li>
+                        <li>Поло</li>
+                    </ul>
+                </li>
+                <!-- Добавьте другие вкладки здесь -->
+            </ul>
+    <section class="tovarsAll">
+        <div class="tovars">
+            
+            <div class="cardsContainer">
+                <div class="product-card">
+                    <div class="image-slider">
+                        <img src="imgs/Group 10.png"alt="Product Image" class="product-image active">
+                        <img src="imgs/Group 9.png" alt="Product Image" class="product-image">
+                        <img src="imgs/Group 10 (2).png" alt="Product Image" class="product-image">
+                        <button class="arrow left" onclick="changeImage(event, this, -1)">&#10094;</button>
+                        <button class="arrow right" onclick="changeImage(event, this, 1)">&#10095;</button>
+                    </div>
+                    <h2>EL003 Elleven Checkpoint-Friendly Compu-Backpack</h2>
+                    <p>EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                    <div class="color-buttons">
+                        <div class="color-button" style="background-color: #524983;"></div>
+                        <div class="color-button" style="background-color: #309F85;"></div>
+                        <div class="color-button" style="background-color: #F1F1F1;"></div>
+                    </div>
+                    <div class="price">From Price <br> $76.43 <img src="imgs/shopping-basket.png" alt=""></div>
+                </div>
+                <div class="product-card">
+                    <div class="image-slider">
+                        <img src="imgs/Group 10.png"alt="Product Image" class="product-image active">
+                        <img src="imgs/Group 9.png" alt="Product Image" class="product-image">
+                        <img src="imgs/Group 10 (2).png" alt="Product Image" class="product-image">
+                        <button class="arrow left" onclick="changeImage(event, this, -1)">&#10094;</button>
+                        <button class="arrow right" onclick="changeImage(event, this, 1)">&#10095;</button>
+                    </div>
+                    <h2>EL003 Elleven Checkpoint-Friendly Compu-Backpack</h2>
+                    <p>EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                    <div class="color-buttons">
+                        <div class="color-button" style="background-color: #524983;"></div>
+                        <div class="color-button" style="background-color: #309F85;"></div>
+                        <div class="color-button" style="background-color: #F1F1F1;"></div>
+                    </div>
+                    <div class="price">From Price <br> $76.43 <img src="imgs/shopping-basket.png" alt=""></div>
+                </div>
+                <div class="product-card">
+                    <div class="image-slider">
+                        <img src="imgs/Group 9.png" alt="Product Image" class="product-image active">
+                        <img src="imgs/Group 10.png" alt="Product Image" class="product-image">
+                        <img src="imgs/Group 10 (2).png" alt="Product Image" class="product-image">
+                        <button class="arrow left" onclick="changeImage(event, this, -1)">&#10094;</button>
+                        <button class="arrow right" onclick="changeImage(event, this, 1)">&#10095;</button>
+                    </div>
+                    <h2>EL003 Elleven Checkpoint-Friendly Compu-Backpack</h2>
+                    <p>EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                    <div class="color-buttons">
+                        <div class="color-button" style="background-color: #524983;"></div>
+                        <div class="color-button" style="background-color: #309F85;"></div>
+                        <div class="color-button" style="background-color: #F1F1F1;"></div>
+                    </div>
+                    <div class="price">From Price <br> $76.43 <img src="imgs/shopping-basket.png" alt=""></div>
+                </div>
+                <div class="product-card">
+                    <div class="image-slider">
+                        <img src="imgs/Group 9.png" alt="Product Image" class="product-image active">
+                        <img src="imgs/Group 10.png" alt="Product Image" class="product-image">
+                        <img src="imgs/Group 10 (2).png" alt="Product Image" class="product-image">
+                        <button class="arrow left" onclick="changeImage(event, this, -1)">&#10094;</button>
+                        <button class="arrow right" onclick="changeImage(event, this, 1)">&#10095;</button>
+                    </div>
+                    <h2>EL003 Elleven Checkpoint-Friendly Compu-Backpack</h2>
+                    <p>EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                    <div class="color-buttons">
+                        <div class="color-button" style="background-color: #524983;"></div>
+                        <div class="color-button" style="background-color: #309F85;"></div>
+                        <div class="color-button" style="background-color: #F1F1F1;"></div>
+                    </div>
+                    <div class="price">From Price <br> $76.43 <img src="imgs/shopping-basket.png" alt=""></div>
+                </div>
+                
+            </div>
+            <div class="cardsContainer">
+                <div class="product-card">
+                    <div class="image-slider">
+                        <img src="imgs/Group 10.png"alt="Product Image" class="product-image active">
+                        <img src="imgs/Group 9.png" alt="Product Image" class="product-image">
+                        <img src="imgs/Group 10 (2).png" alt="Product Image" class="product-image">
+                        <button class="arrow left" onclick="changeImage(event, this, -1)">&#10094;</button>
+                        <button class="arrow right" onclick="changeImage(event, this, 1)">&#10095;</button>
+                    </div>
+                    <h2>EL003 Elleven Checkpoint-Friendly Compu-Backpack</h2>
+                    <p>EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                    <div class="color-buttons">
+                        <div class="color-button" style="background-color: #524983;"></div>
+                        <div class="color-button" style="background-color: #309F85;"></div>
+                        <div class="color-button" style="background-color: #F1F1F1;"></div>
+                    </div>
+                    <div class="price">From Price <br> $76.43 <img src="imgs/shopping-basket.png" alt=""></div>
+                </div>
+                <div class="product-card">
+                    <div class="image-slider">
+                        <img src="imgs/Group 10.png"alt="Product Image" class="product-image active">
+                        <img src="imgs/Group 9.png" alt="Product Image" class="product-image">
+                        <img src="imgs/Group 10 (2).png" alt="Product Image" class="product-image">
+                        <button class="arrow left" onclick="changeImage(event, this, -1)">&#10094;</button>
+                        <button class="arrow right" onclick="changeImage(event, this, 1)">&#10095;</button>
+                    </div>
+                    <h2>EL003 Elleven Checkpoint-Friendly Compu-Backpack</h2>
+                    <p>EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                    <div class="color-buttons">
+                        <div class="color-button" style="background-color: #524983;"></div>
+                        <div class="color-button" style="background-color: #309F85;"></div>
+                        <div class="color-button" style="background-color: #F1F1F1;"></div>
+                    </div>
+                    <div class="price">From Price <br> $76.43 <img src="imgs/shopping-basket.png" alt=""></div>
+                </div>
+                <div class="product-card">
+                    <div class="image-slider">
+                        <img src="imgs/Group 9.png" alt="Product Image" class="product-image active">
+                        <img src="imgs/Group 10.png" alt="Product Image" class="product-image">
+                        <img src="imgs/Group 10 (2).png" alt="Product Image" class="product-image">
+                        <button class="arrow left" onclick="changeImage(event, this, -1)">&#10094;</button>
+                        <button class="arrow right" onclick="changeImage(event, this, 1)">&#10095;</button>
+                    </div>
+                    <h2>EL003 Elleven Checkpoint-Friendly Compu-Backpack</h2>
+                    <p>EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                    <div class="color-buttons">
+                        <div class="color-button" style="background-color: #524983;"></div>
+                        <div class="color-button" style="background-color: #309F85;"></div>
+                        <div class="color-button" style="background-color: #F1F1F1;"></div>
+                    </div>
+                    <div class="price">From Price <br> $76.43 <img src="imgs/shopping-basket.png" alt=""></div>
+                </div>
+                <div class="product-card">
+                    <div class="image-slider">
+                        <img src="imgs/Group 9.png" alt="Product Image" class="product-image active">
+                        <img src="imgs/Group 10.png" alt="Product Image" class="product-image">
+                        <img src="imgs/Group 10 (2).png" alt="Product Image" class="product-image">
+                        <button class="arrow left" onclick="changeImage(event, this, -1)">&#10094;</button>
+                        <button class="arrow right" onclick="changeImage(event, this, 1)">&#10095;</button>
+                    </div>
+                    <h2>EL003 Elleven Checkpoint-Friendly Compu-Backpack</h2>
+                    <p>EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                    <div class="color-buttons">
+                        <div class="color-button" style="background-color: #524983;"></div>
+                        <div class="color-button" style="background-color: #309F85;"></div>
+                        <div class="color-button" style="background-color: #F1F1F1;"></div>
+                    </div>
+                    <div class="price">From Price <br> $76.43 <img src="imgs/shopping-basket.png" alt=""></div>
+                </div>
+                
+            </div>
+            <div class="pokazat">
+                <ul>
+                    <li><p>Показать еще</p><a href=""><img src="" alt=""></a></li>
+                </ul>
+                <ul>
+                    <li><button><</button></li>
+                    <li><button>1</button><button>2</button><button>3</button><button>4</button><button>5</button></li>
+                    <li><button>></button></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="ideasAll">
+        <div class="ideas">
+            <p class="nazv">У вас своя УНИКАЛЬНАЯ идея по разработке мерча?</p>
+            <p class="podNazv">Изготовим мерч по вашему дизайну. Расскажем лайфхаки и ознакомим с  технологией производства, предоставим образцы матералов. </p>
+            <p class="podpodNazv">Введите свои контактные данные, и наш менеджер свяжется с Вами в течении 1 часа</p>
+            <ul>
+                <li><form action=""><input type="text" placeholder="Ваше Имя"></form></li>
+                <li><form action=""><input type="text" placeholder="Ваша електронная почта"></form></li>
+                <li><form action=""><input type="text" placeholder="Ваш номер телефона"></form></li>
+                <li><button>Заказать</button></li>
+            </ul>
+        </div>
+    </section>
+    <section class="footerAll">
+        <footer>
+            <ul>
+                <li><a href=""><img src="imgs/logo.svg" alt=""></a></li>
+                <li><p>Свежее дыхание в корпоративной жизни и жизни корпоративной дыхание свежее </p></li>
+                <li><p>+380 630 130 103</p><p>example@gmail.com</p></li>
+                <li><a href=""><img src="imgs/Facebook - Original.png" alt=""></a><a href=""><img src="imgs/Instagram - Original.png" alt=""></a><a href=""><img src="imgs/LinkedIn - Original.png" alt=""></a></li>
+            </ul>
+            <ul>
+                <li><p class="nazv">Категории</p></li>
+                <li><a href="">Пошив</a></li>
+                <li><a href="">Все товары</a></li>
+                <li><a href="">Наборы</a></li>
+                <li><a href="">Производство</a></li>
+            </ul>
+            <ul>
+                <li ><p class="nazv">Информация</p></li>
+                <li><a href="">О нас</a></li>
+                <li><a href="">ЧаВо</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+            <ul>
+                <li><p class="nazv">Связаться с менеджером</p></li>
+                <li><p class="qa">Есть вопрос на который не нашли ответ? Оставьте контакт и наш менеджер свяжется с вами</p></li>
+                <li><form action=""><input type="text" placeholder="Номер телефона"><button>></button></form></li>
+            </ul>
+        </footer>
+        <ul class="reserved">
+            <li><p>© 2022 . All rights reserved. Политика конфиденциальности</p></li>
+        </ul>
+    </section>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
