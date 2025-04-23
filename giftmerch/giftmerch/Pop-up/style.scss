@@ -1,0 +1,305 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+*:focus {
+    outline: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+}
+.color-buttons {
+    margin-top: 10px;
+  }
+  .color-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+.pop-up-card-All {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80vw;
+    background-color: pink;
+    border-radius: 16px;
+    .withButtonInfo {
+        align-self: flex-start;
+        padding: 0.5vw;
+    }
+    .closeInfoButton {
+        background-color: white;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 1.7vw;
+        font-weight: 700;
+    }
+    #photomain {
+        width: 30vw;
+    }
+    .opisanie {
+        display: flex;
+        padding: 2vw;
+        flex-direction: column;
+        height: auto;
+        row-gap: 2vh;
+        justify-content: space-around;
+        align-self: flex-start;
+        #opistovar {
+            width: 80%;
+            color: #454747;
+        }
+        #price {
+            color: #272525;
+            font-size: 1.2vw;
+            font-weight: 700;
+        }
+        #nazv{
+            font-size: 3vw;
+            font-weight: 600;
+            color: #272525;
+        }
+    }
+    .withImg {
+        padding: 1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+        row-gap: 2vh;
+        ul{
+            display: flex;
+            align-self: flex-start;
+            align-items: center;
+            justify-content: space-between;
+            width: auto;
+            column-gap: 1vw;
+            li{
+                list-style: none;
+            }
+        }
+    }
+    .pop-up-card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width:auto ;
+        column-gap: 2vw;
+    }
+}
+.razmer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: auto;
+    column-gap: 2vw;
+    ul:nth-child(2){
+        li{
+            column-gap: 7vw;
+        }
+    }
+    ul:nth-child(1){
+        li:nth-child(2){
+            flex-direction: row-reverse;
+            a {
+                text-decoration: none;
+                color: #524983;
+            }
+        }
+        li:nth-child(3){
+            align-self: center;
+            column-gap: 1vw;
+        }
+        li:nth-child(4){
+            align-self: center;
+            button {
+                background-color: #524983;
+                border-radius: 30px;
+                color: #FFFFFF;
+                border: none;
+                width: auto;
+                padding: 5vw;
+                padding-top: 1.2vw;
+                font-size:1vw;
+                cursor: pointer;
+                padding-bottom: 1.2vw;
+            }
+        }
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+        row-gap: 2vh;
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: auto;
+            column-gap: 2vw;
+        }
+        
+    }
+}
+.oformlenieAll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 70vw;
+    padding: 1vw;
+    border-radius: 16px;
+    background-color: rgb(244, 193, 253);
+
+    .tovarImg {
+        width: 5vw;
+    }
+    .zakaznumber {
+        color: #8E8E8E;
+    }
+    .vsego {
+        align-self: flex-end;
+        font-size: 1.7vw;
+        font-weight: 700;
+    }
+    .spravaOform {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-left: 2px solid black;
+        padding-left: 2vw;
+        .sprava {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            height: auto;
+            row-gap: 2vh;
+            padding-bottom: 1vh;
+            .korz {
+                display: flex;
+                width: auto;
+                justify-content: space-between;
+                justify-self: flex-start;
+                button {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border: 3px black solid;
+                    font-size: 1.2vw;
+                    font-weight: 700;
+                    background-color: white;
+                }
+                p{
+                    font-size: 1.7vw;
+                    font-weight: 700;
+                }
+            }
+            .spravaInfo {
+                display: flex;
+                width: auto;
+                padding-bottom: 1vh;
+                column-gap: 2vw;
+                border-bottom: 2px solid black;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+                    row-gap: 1vh;
+                    li {
+                        display: flex;
+                        column-gap: 1vw;
+                        button{
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 5px;
+                            border: 1px solid black;
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .oformlenie {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: auto;
+        column-gap: 2vh;
+        .slevaOform {
+            width: 45%;
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            align-self: flex-start;
+            height: auto;
+            row-gap: 2vh;
+            justify-content: space-between;
+            button {
+                background-color: #309F85;
+                border-radius: 30px;
+                color: #FFFFFF;
+                border: none;
+                width: auto;
+                padding: 5vw;
+                padding-top: 1vw;
+                font-size:1vw;
+                cursor: pointer;
+                padding-bottom: 1vw;
+            }
+            form {
+                width: 20vw;
+                border: none;
+                border-bottom: 1px solid black;
+                input {
+                    border:none;
+                    background: transparent;
+                    font-size: 1vw;
+                }
+            }
+            ul {
+                align-items: center;
+                flex-direction: column;
+                display: flex;
+                height: auto;
+                row-gap: 3vh;
+                justify-content: space-around;
+                li:nth-child(1){
+                    font-size: 1.7vw;
+                    font-weight: 700;
+                }
+                li:nth-child(2){
+                    font-size: 0.9vw;
+                    width: 70%;
+                    color: #454747;
+                }
+                li:nth-child(7){
+                    width: 70%;
+                }
+                li:nth-child(6){
+                    align-self: center;
+                }
+            }
+        }
+        li {
+            list-style: none;
+        }
+    }
+}

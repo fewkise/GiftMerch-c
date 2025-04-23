@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -618,4 +619,52 @@ main ul:nth-child(1) li:nth-child(2) {
 }
 .footerAll footer ul:nth-child(1) li:nth-child(2) {
   width: 20vw;
+}
+
+.sliderBrands {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.brands {
+  white-space: nowrap;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slides li {
+  list-style: none;
+  width: 20%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider li {
+  list-style: none;
+  margin: 0 10px; /* Отступы между слайдами */
+  flex: 0 0 25%; /* Фиксированная ширина, чтобы показывать 4 элемента */
+}
+
+.slider img {
+  max-width: 100%; /* Адаптивная ширина изображений */
+  height: auto; /* Автоматическая высота изображений */
+}
+
+.slider-container {
+  overflow: hidden; /* Скрыть все, что выходит за пределы контейнера */
+  width: 100%; /* Задать ширину контейнера */
 }/*# sourceMappingURL=style.css.map */

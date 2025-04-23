@@ -42,3 +42,41 @@ function closeAllMenus() {
     const line = document.getElementById('topLine');
     line.style.backgroundColor = 'gray';
 }
+let openTovarInfo = document.querySelectorAll('.basketButton');
+let tovarInfo = document.querySelector('.pop-up-card-All');
+let closeTovarInfo = document.querySelector('.closeInfoButton');
+let overlay = document.querySelector('.overlay');
+
+function tovarInfoOpen() {
+    openTovarInfo.forEach(button => {
+        button.addEventListener('click', () => {
+            tovarInfo.style.display = 'flex';
+            overlay.style.display = 'block'; // Показываем затемнение
+        });
+    });
+
+    if (closeTovarInfo) {
+        closeTovarInfo.addEventListener('click', () => {
+            tovarInfo.style.display = 'none';
+            overlay.style.display = 'none'; // Скрываем затемнение
+        });
+    }
+}
+
+tovarInfoOpen();
+
+let openZakaz = document.querySelector('.zakazbutton')
+let zakazInfo = document.querySelector('.oformlenieAll')
+let closeZakazInfo = document.querySelector('.closeZakazButton')
+
+function zakazOpen(){
+    openZakaz.addEventListener('click', () =>{
+        zakazInfo.style.display = 'flex'
+        tovarInfo.style.display = 'none'
+    })
+    closeZakazInfo.addEventListener('click', ()=>{
+         zakazInfo.style.display = 'none'
+         tovarInfo.style.display = 'flex'
+    })
+}
+zakazOpen()

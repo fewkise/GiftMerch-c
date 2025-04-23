@@ -1,0 +1,313 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+*:focus {
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI";
+}
+
+.color-buttons {
+  margin-top: 10px;
+}
+
+.color-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.pop-up-card-All {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 80vw;
+  background-color: pink;
+  border-radius: 16px;
+}
+.pop-up-card-All .withButtonInfo {
+  align-self: flex-start;
+  padding: 0.5vw;
+}
+.pop-up-card-All .closeInfoButton {
+  background-color: white;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.7vw;
+  font-weight: 700;
+}
+.pop-up-card-All #photomain {
+  width: 30vw;
+}
+.pop-up-card-All .opisanie {
+  display: flex;
+  padding: 2vw;
+  flex-direction: column;
+  height: auto;
+  row-gap: 2vh;
+  justify-content: space-around;
+  align-self: flex-start;
+}
+.pop-up-card-All .opisanie #opistovar {
+  width: 80%;
+  color: #454747;
+}
+.pop-up-card-All .opisanie #price {
+  color: #272525;
+  font-size: 1.2vw;
+  font-weight: 700;
+}
+.pop-up-card-All .opisanie #nazv {
+  font-size: 3vw;
+  font-weight: 600;
+  color: #272525;
+}
+.pop-up-card-All .withImg {
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  row-gap: 2vh;
+}
+.pop-up-card-All .withImg ul {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  -moz-column-gap: 1vw;
+       column-gap: 1vw;
+}
+.pop-up-card-All .withImg ul li {
+  list-style: none;
+}
+.pop-up-card-All .pop-up-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+}
+
+.razmer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: auto;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+}
+.razmer ul:nth-child(2) li {
+  -moz-column-gap: 7vw;
+       column-gap: 7vw;
+}
+.razmer ul:nth-child(1) li:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.razmer ul:nth-child(1) li:nth-child(2) a {
+  text-decoration: none;
+  color: #524983;
+}
+.razmer ul:nth-child(1) li:nth-child(3) {
+  align-self: center;
+  -moz-column-gap: 1vw;
+       column-gap: 1vw;
+}
+.razmer ul:nth-child(1) li:nth-child(4) {
+  align-self: center;
+}
+.razmer ul:nth-child(1) li:nth-child(4) button {
+  background-color: #524983;
+  border-radius: 30px;
+  color: #FFFFFF;
+  border: none;
+  width: auto;
+  padding: 5vw;
+  padding-top: 1.2vw;
+  font-size: 1vw;
+  cursor: pointer;
+  padding-bottom: 1.2vw;
+}
+.razmer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  row-gap: 2vh;
+}
+.razmer ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+}
+
+.oformlenieAll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 70vw;
+  padding: 1vw;
+  border-radius: 16px;
+  background-color: rgb(244, 193, 253);
+}
+.oformlenieAll .tovarImg {
+  width: 5vw;
+}
+.oformlenieAll .zakaznumber {
+  color: #8E8E8E;
+}
+.oformlenieAll .vsego {
+  align-self: flex-end;
+  font-size: 1.7vw;
+  font-weight: 700;
+}
+.oformlenieAll .spravaOform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 2px solid black;
+  padding-left: 2vw;
+}
+.oformlenieAll .spravaOform .sprava {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: auto;
+  row-gap: 2vh;
+  padding-bottom: 1vh;
+}
+.oformlenieAll .spravaOform .sprava .korz {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  justify-self: flex-start;
+}
+.oformlenieAll .spravaOform .sprava .korz button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px black solid;
+  font-size: 1.2vw;
+  font-weight: 700;
+  background-color: white;
+}
+.oformlenieAll .spravaOform .sprava .korz p {
+  font-size: 1.7vw;
+  font-weight: 700;
+}
+.oformlenieAll .spravaOform .sprava .spravaInfo {
+  display: flex;
+  width: auto;
+  padding-bottom: 1vh;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  border-bottom: 2px solid black;
+}
+.oformlenieAll .spravaOform .sprava .spravaInfo ul {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  row-gap: 1vh;
+}
+.oformlenieAll .spravaOform .sprava .spravaInfo ul li {
+  display: flex;
+  -moz-column-gap: 1vw;
+       column-gap: 1vw;
+}
+.oformlenieAll .spravaOform .sprava .spravaInfo ul li button {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: white;
+}
+.oformlenieAll .oformlenie {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  -moz-column-gap: 2vh;
+       column-gap: 2vh;
+}
+.oformlenieAll .oformlenie .slevaOform {
+  width: 45%;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  align-self: flex-start;
+  height: auto;
+  row-gap: 2vh;
+  justify-content: space-between;
+}
+.oformlenieAll .oformlenie .slevaOform button {
+  background-color: #309F85;
+  border-radius: 30px;
+  color: #FFFFFF;
+  border: none;
+  width: auto;
+  padding: 5vw;
+  padding-top: 1vw;
+  font-size: 1vw;
+  cursor: pointer;
+  padding-bottom: 1vw;
+}
+.oformlenieAll .oformlenie .slevaOform form {
+  width: 20vw;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.oformlenieAll .oformlenie .slevaOform form input {
+  border: none;
+  background: transparent;
+  font-size: 1vw;
+}
+.oformlenieAll .oformlenie .slevaOform ul {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  row-gap: 3vh;
+  justify-content: space-around;
+}
+.oformlenieAll .oformlenie .slevaOform ul li:nth-child(1) {
+  font-size: 1.7vw;
+  font-weight: 700;
+}
+.oformlenieAll .oformlenie .slevaOform ul li:nth-child(2) {
+  font-size: 0.9vw;
+  width: 70%;
+  color: #454747;
+}
+.oformlenieAll .oformlenie .slevaOform ul li:nth-child(7) {
+  width: 70%;
+}
+.oformlenieAll .oformlenie .slevaOform ul li:nth-child(6) {
+  align-self: center;
+}
+.oformlenieAll .oformlenie li {
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */
