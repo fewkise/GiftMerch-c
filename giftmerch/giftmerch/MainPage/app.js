@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.querySelector('.prev1').addEventListener('click', function() {
-        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        currentIndex = (currentIndex - 1 );
         updateSlidePosition();
     });
 });
