@@ -327,6 +327,10 @@ main {
         }
     }
 }
+.nyanyanya {
+    text-decoration: none;
+    color: #3C336C;
+}
 .creativeAll {
     display: flex;
     flex-direction: column;
@@ -538,5 +542,270 @@ main {
                 width: 20vw;
             }
         }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .headerAll {
+        row-gap: 3vh;
+        padding-top: 4vh;
+        background-size: 120%;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .cardsContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gotovieNaboriAll .gotovieNabori {
+        width: 90vw;
+    }
+
+    .product-card {
+        width: calc(33.33% - 4vw); /* 3 карточки в ряд */
+        height: auto; /* автоматически регулируем высоту */
+        margin: 1vw;
+        p {
+            font-size: 1vw;
+        }
+        h2 {
+            font-size: 1.5vw;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .priceAll .price {
+        flex-direction: column;
+    }
+    .priceAll .price ul li:nth-child(2) {
+        width: 80vw;
+        font-size: 2vw;
+    }
+    .cardsContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .headerAll {
+        background-size: 130%;
+    }
+    .product-card {
+        width: calc(30% - 2vw); /* 2 карточки в ряд */
+        height: auto; /* автоматически регулируем высоту */
+        margin: 1vw;
+    }
+    .creativeAll {
+        height: auto;
+        padding-top: 15vh;
+        padding-bottom: 10vh;
+        background-size: 150%;
+    }
+    .creativeAll img {
+        width: 20vw;
+    }
+    .creativeAll .creative ul li:nth-child(3) button {
+        font-size: 1.5vw;
+        padding: 1vw;
+       padding-right: 2vw;
+       padding-left: 2vw;
+    }
+    .creativeAll .creative ul li:nth-child(3) button {
+        width: auto;
+    }
+    .creativeAll .creative ul li:nth-child(3) {
+        width: 35vw;
+        column-gap: 3vw;
+    }
+    .creativeAll .creative ul li:nth-child(1) {
+        font-size: 3vw;
+    }
+    .creativeAll .creative ul li:nth-child(1) {
+        font-size: 5vw;
+    }
+    .creativeAll .creative ul li:nth-child(2) {
+        font-size: 3vw;
+    }
+    .creativeAll .creative ul li:nth-child(3){
+        align-self: center;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        row-gap: 2vh;
+        button {
+            font-size: 3vw;
+            padding: 2vw;
+            padding-right: 15vw;
+            padding-left: 15vw;
+        }
+    }
+    .creativeAll {
+        padding-top: 3vh;
+        padding-bottom: 40vh;
+        background-size: 200%;
+        background-position: 80% 100%;
+    }
+    .forms ul {
+        position: relative;
+        left: -10px;     
+        top: -200px;
+    }
+    .creativeAll .forms ul form {
+        width: 30vw;
+    }
+    .creativeAll .forms #forforms {
+        font-size: 2vw;
+        width: 50vw;
+    }
+    .footerAll {
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .gotovieNaboriAll .gotovieNabori #nazvvv {
+        font-size: 6vw;
+    }
+    .footerAll {
+        padding-bottom: 0;
+    }
+    .cardsContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        row-gap: 2vh;
+    }
+    .headerAll header div:nth-child(2) ul {
+        display: none;
+    }
+    main ul:nth-child(1) li:nth-child(1){
+        font-size: 4vw;
+        width: 80vw;
+    }
+    main ul:nth-child(1) li:nth-child(2) {
+        font-size: 2vw;
+        width: 60vw;
+    }
+    .headerAll header div:nth-child(2) {
+        display: none;
+    }
+    .headerAll {
+        background-size: 150%;
+        background-position: 50% 0%;
+    }
+    .headerAll header ul li form {
+        display: none;
+    }
+    .headerAll header ul {
+        column-gap: 10vw;
+    }
+    .headerAll header .forlogo img {
+        width: 35vw;
+    }
+    .product-card {
+        padding: 1vw;
+        width: calc(40% - 2vw); /* 2 карточки в ряд */
+        height: auto; /* автоматически регулируем высоту */
+        margin: 1vw;
+    }
+    .priceAll .price ul li:nth-child(2) {
+        font-size: 3vw;
+    }
+    .priceAll .price ul li:nth-child(1){
+        font-size: 5vw;
+    }
+    .priceAll .price {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .creativeAll {
+        padding-bottom: 10vh;
+    }
+    .creativeAll .creative ul {
+        position: initial;
+        align-self: flex-start;
+    }
+    .creativeAll .forms {
+        flex-direction: column;
+    }
+    .creativeAll img {
+        width: 50vw;
+        align-self: center;
+    }
+    .creativeAll .creative ul li:nth-child(1) {
+        font-size: 6vw;
+    }
+    .creativeAll .creative ul .nyanya {
+        font-size: 5vw;
+        width: 70vw;
+    }
+    .creativeAll .creative ul li:nth-child(2) {
+        width: 100%;
+    }
+    .creativeAll .creative ul li:nth-child(1) {
+        width: 100%;
+    }
+    .creativeAll {
+        padding-bottom: 35vh;
+        background-size: 250%;
+    }
+    .creativeAll .forms #forforms {
+        font-size: 5vw;
+        width: 70vw;
+    }
+    .creativeAll .forms ul button {
+        font-size: 5vw;
+        padding: 2vw;
+        padding-right: 13vw;
+        padding-left: 13vw;
+    }
+    .product-card {
+        width: calc(100% - 2vw); /* 1 карточка в ряд */
+        height: auto; /* автоматически регулируем высоту */
+        margin: 1vw;
+    }
+
+    #nazvvv {
+        font-size: 4vw; /* Увеличиваем размер шрифта */
+    }
+}
+@media (max-width: 768px) {
+    .footerAll footer {
+        flex-direction: row; /* Сохранить рядное размещение */
+        justify-content: space-between; /* Сохранить равные отступы */
+    }
+
+    .footerAll footer .nazv {
+        font-size: 1.5vw; /* Уменьшение размера шрифта */
+    }
+
+    .footerAll footer ul {
+        width: 30vw; /* Уменьшение ширины списков */
+    }
+
+    .footerAll footer form input {
+        width: 40vw; /* Уменьшение ширины поля ввода */
+    }
+}
+
+@media (max-width: 480px) {
+    .footerAll footer {
+        flex-direction: row; /* Сохраняем рядное размещение */
+        justify-content: space-between; /* Поддерживаем равномерные отступы */
+    }
+
+    .footerAll footer .nazv {
+        font-size: 2vw; /* Увеличение размера шрифта для улучшения читаемости */
+    }
+
+    .footerAll footer ul {
+        width: 40vw; /* Увеличение ширины списков */
+    }
+
+    .footerAll footer form input {
+        width: 60vw; /* Увеличение ширины поля ввода */
+    }
+
+    .footerAll .reserved {
+        font-size: 1.2vw; /* Увеличение шрифта для читаемости */
     }
 }

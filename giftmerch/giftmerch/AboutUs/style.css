@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -483,4 +484,309 @@ main ul:nth-child(1) li:nth-child(3) a {
 }
 .footerAll footer ul:nth-child(1) li:nth-child(2) {
   width: 20vw;
+}
+
+@media screen and (max-width: 1000px) {
+  main ul:nth-child(1) li:nth-child(3) {
+    font-size: 2vw;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .headerAll {
+    row-gap: 3vh;
+    padding-top: 4vh;
+    background-size: 120%;
+  }
+  .questionsandAnsAll .questionsandAns {
+    width: 90vw; /* увеличиваем ширину */
+    row-gap: 5vh; /* увеличиваем расстояние между вопросами */
+  }
+  .questionsandAnsAll .questionsandAns ul li:nth-child(1) {
+    font-size: 2vw; /* увеличиваем текст */
+  }
+  .questionsandAnsAll .questionsandAns ul li:nth-child(2) {
+    font-size: 1vw; /* увеличиваем текст */
+  }
+  .questionsAll {
+    padding-top: 5vh; /* уменьшаем верхний отступ */
+    padding-bottom: 5vh; /* уменьшаем нижний отступ */
+  }
+  .questionsAll .ques {
+    width: 90vw; /* увеличиваем ширину блока с вопросами */
+  }
+  .questionsAll .forHoodieImg img {
+    width: 30vw; /* увеличиваем ширину изображения */
+  }
+  .questionsAll .questions {
+    width: 60vw; /* увеличиваем ширину вопросов */
+  }
+  .questionsAll .questions .withNazv {
+    font-size: 2vw; /* увеличиваем текст */
+  }
+  .questionsAll .questions .withNazv img {
+    width: 2vw; /* увеличиваем ширину изображения */
+  }
+  .contactsAll .forms {
+    -moz-column-gap: 2vw;
+         column-gap: 2vw; /* уменьшаем промежуток между элементами форм */
+  }
+  .contactsAll .forms #forforms {
+    width: 25vw; /* увеличиваем ширину формы */
+  }
+  .contactsAll .forms ul button {
+    padding: 0.8vw 3vw; /* изменяем отступы кнопки */
+    font-size: 1vw; /* увеличиваем текст кнопки */
+  }
+  .contactsAll .forms ul form {
+    width: 25vw; /* увеличиваем ширину формы */
+  }
+  .contactsAll .forms ul form input {
+    font-size: 1.2vw; /* увеличиваем размер шрифта в инпуте */
+  }
+  .contactsAll .forms p {
+    font-size: 1.5vw; /* увеличиваем текст */
+  }
+  .contactsAll .creative {
+    width: 90vw; /* увеличиваем ширину креативного блока */
+  }
+  .contactsAll .contacts {
+    width: 90vw; /* увеличиваем ширину контактов */
+  }
+}
+@media screen and (max-width: 768px) {
+  .headerAll {
+    background-size: 170%;
+    background-position: 60% 60%;
+  }
+  .questionsandAnsAll .questionsandAns {
+    width: 95vw; /* еще больше увеличиваем ширину */
+    row-gap: 6vh; /* увеличиваем расстояние между вопросами */
+  }
+  .questionsandAnsAll .questionsandAns ul li:nth-child(1) {
+    font-size: 2.5vw; /* увеличиваем текст */
+  }
+  .questionsandAnsAll .questionsandAns ul li:nth-child(2) {
+    font-size: 1.2vw; /* увеличиваем текст */
+  }
+  .questionsAll {
+    padding-top: 3vh; /* еще меньше отступ */
+    padding-bottom: 3vh; /* еще меньше отступ */
+  }
+  .questionsAll .ques {
+    width: 95vw; /* увеличиваем ширину блока с вопросами */
+  }
+  .questionsAll .forHoodieImg img {
+    width: 35vw; /* изменяем ширину изображения */
+  }
+  .questionsAll .questions {
+    width: 80vw; /* увеличиваем ширину вопросов */
+  }
+  .questionsAll .questions .withNazv {
+    font-size: 2.5vw; /* увеличиваем текст */
+  }
+  .questionsAll .questions .withNazv img {
+    width: 2.5vw; /* увеличиваем ширину изображения */
+  }
+  .contactsAll .forms {
+    -moz-column-gap: 1vw;
+         column-gap: 1vw; /* уменьшаем промежуток между элементами форм */
+  }
+  .contactsAll .forms #forforms {
+    width: 30vw; /* увеличиваем ширину формы */
+  }
+  .contactsAll .forms ul button {
+    padding: 0.7vw 2.5vw; /* изменяем отступы кнопки */
+    font-size: 1.1vw; /* увеличиваем текст кнопки */
+  }
+  .contactsAll .forms ul form {
+    width: 30vw; /* увеличиваем ширину формы */
+  }
+  .contactsAll .forms ul form input {
+    font-size: 1.5vw; /* увеличиваем размер шрифта в инпуте */
+  }
+  .contactsAll .forms p {
+    font-size: 1.8vw; /* увеличиваем текст */
+  }
+  .contactsAll .creative {
+    width: 95vw; /* увеличиваем ширину креативного блока */
+  }
+  .contactsAll .contacts {
+    width: 95vw; /* увеличиваем ширину контактов */
+  }
+}
+@media screen and (max-width: 480px) {
+  .footerAll {
+    padding-bottom: 0;
+  }
+  .headerAll header div:nth-child(2) ul {
+    display: none;
+  }
+  main ul:nth-child(1) li:nth-child(1) {
+    font-size: 4vw;
+    width: 80vw;
+  }
+  main ul:nth-child(1) li:nth-child(2) {
+    font-size: 2vw;
+    width: 50vw;
+  }
+  .headerAll header div:nth-child(2) {
+    display: none;
+  }
+  .headerAll {
+    background-size: 150%;
+    background-position: 50% 0%;
+    padding-bottom: 5vh;
+  }
+  .questionsandAnsAll .questionsandAns ul li:nth-child(1) {
+    font-size: 4vw;
+  }
+  .questionsandAnsAll .questionsandAns ul li:nth-child(2) {
+    font-size: 3vw;
+  }
+  .headerAll header ul li form {
+    display: none;
+  }
+  .headerAll header ul {
+    -moz-column-gap: 10vw;
+         column-gap: 10vw;
+  }
+  .headerAll header .forlogo img {
+    width: 35vw;
+  }
+  .questionsAll .ques {
+    flex-direction: column;
+  }
+  .contactsAll .contacts {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contactsAll .contacts .slevaAll ul li:nth-child(1) p {
+    font-size: 4vw;
+  }
+  .contactsAll .contacts .slevaAll ul li:nth-child(3) {
+    font-size: 4vw;
+  }
+  .contactsAll .contacts .slevaAll ul li:nth-child(2) {
+    font-size: 5vw;
+  }
+  .contactsAll .contacts .slevaAll ul li:nth-child(4) img {
+    width: 5vw;
+  }
+  .contactsAll .forms {
+    flex-direction: column;
+  }
+  .contactsAll .forms #forforms {
+    font-size: 4vw;
+    width: 70vw;
+  }
+  .contactsAll .forms ul form {
+    width: 70vw;
+  }
+  .contactsAll .forms ul button {
+    font-size: 4vw;
+    padding-right: 10vw;
+    padding-left: 10vw;
+  }
+}
+@media (max-width: 768px) {
+  .footerAll footer {
+    flex-direction: row; /* Сохранить рядное размещение */
+    justify-content: space-between; /* Сохранить равные отступы */
+  }
+  .footerAll footer .nazv {
+    font-size: 1.5vw; /* Уменьшение размера шрифта */
+  }
+  .footerAll footer ul {
+    width: 30vw; /* Уменьшение ширины списков */
+  }
+  .footerAll footer form input {
+    width: 40vw; /* Уменьшение ширины поля ввода */
+  }
+}
+@media (max-width: 480px) {
+  .footerAll footer {
+    flex-direction: row; /* Сохраняем рядное размещение */
+    justify-content: space-between; /* Поддерживаем равномерные отступы */
+  }
+  .footerAll footer .nazv {
+    font-size: 2vw; /* Увеличение размера шрифта для улучшения читаемости */
+  }
+  .footerAll footer ul {
+    width: 40vw; /* Увеличение ширины списков */
+  }
+  .footerAll footer form input {
+    width: 60vw; /* Увеличение ширины поля ввода */
+  }
+  .footerAll .reserved {
+    font-size: 1.2vw; /* Увеличение шрифта для читаемости */
+  }
+}
+.menu {
+  background-color: #333;
+  padding: 10px;
+}
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.menu li {
+  display: inline-block;
+  position: relative;
+}
+.menu li a button {
+  background-color: #444;
+  color: white;
+  padding: 15px;
+  border: none;
+}
+.menu li a button:hover {
+  background-color: #575757;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+}
+
+.sub-submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #444;
+}
+
+ul.submenu ul {
+  padding: 0;
+}
+
+ul.submenu li {
+  display: block;
+}
+
+.SubgovnoEbanoe {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  background-color: #272525;
+  border-radius: 16px;
+  position: absolute;
+  left: 360px;
+  top: 290px;
+}
+.SubgovnoEbanoe ul {
+  flex-direction: column;
+  display: flex;
+}
+.SubgovnoEbanoe ul li {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #272525;
+}
+.SubgovnoEbanoe ul li:hover {
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */

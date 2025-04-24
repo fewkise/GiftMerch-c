@@ -848,3 +848,664 @@ main {
         }
     }
 }
+@media screen and (max-width:1000px) {
+    .headerAll {
+        row-gap: 3vh;
+        padding-top: 4vh;
+        background-size: 140%;
+    }
+    .ideasAll {
+        padding-top: 12vh;
+    }
+    .menu {
+        flex-wrap: wrap;
+    }
+    .cardsContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        .product-card:nth-child(4){
+            display: none;
+        }
+    }
+    .product-card {
+        width: calc(20% - 1vw); /* 3 карточки в ряд */
+        height: auto; /* автоматически регулируем высоту */
+        margin: 1vw;
+        padding: 1vw;
+        .basketButton {
+            img {
+                width: 5vw;
+            }
+        }
+        img {
+            position: relative;
+            left: 7px;
+            top: 10px;
+        }
+        p {
+            font-size: 1vw;
+        }
+        h2 {
+            font-size: 1.5vw;
+        }
+    }
+    .footerAll {
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width:768px) {
+    .headerAll {
+        background-size: 180%;
+        background-position: 70% 0%;
+    }
+    .cardsContainer {
+        .product-card:nth-child(3){
+            display: none;
+        }
+    }
+    .product-card {
+        width: calc(40% - 2vw); /* 2 карточки в ряд */
+        height: auto; /* автоматически регулируем высоту */
+        margin: 1vw;
+        padding: 2vw;
+        img {
+            position: relative;
+            left: 5px;
+            top: 10px;
+        }
+    }
+    main ul:nth-child(1) li:nth-child(2) {
+        font-size: 2vw;
+        width: 60vw;
+    }
+    main {
+        width: 90vw;
+    }
+    main ul:nth-child(1) li:nth-child(1) {
+        font-size: 3vw;
+        width: 100%;
+    }
+    .headerAll header div:nth-child(2) ul {
+        width: auto;
+        column-gap: 2vw;
+    }
+    .headerAll header div:nth-child(2) ul {
+        button {
+            font-size: 1.8vw;
+        }
+    }
+    .ideasAll {
+        background-size: 170%;
+        background-position: 60% 10%;
+    }
+    .ideasAll .ideas .nazv {
+        font-size: 3vw;
+    }
+    .ideasAll .ideas ul {
+        flex-direction: column;
+        align-self: flex-end;
+        position: relative;
+        top: -100px;
+        form {
+            width: 40vw;
+        }
+    }
+    .ideasAll .ideas .podNazv {
+        font-size: 1.5vw;
+    }
+    .ideasAll {
+        padding-bottom: 0;
+    }
+    .ideasAll .ideas .podpodNazv {
+        font-size: 2vw;
+    }
+    .footerAll {
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width:480px) {
+    .ideasAll .ideas ul{
+        position: inherit;
+        align-self: flex-start;
+        height: auto;
+        row-gap: 2vh;
+        form {
+            width: 80vw;
+        }
+    }
+    .ideasAll {
+        background-image: url('../MainPage/imgs/Group\ 1\ \(31\).png');
+        padding-top: 25vh;
+        background-size: 130%;
+    }
+    .ideasAll .ideas ul button {
+        font-size: 3vw;
+        padding: 2vw;
+        padding-right: 14vw;
+        padding-left: 14vw;
+    }
+    .ideasAll .ideas .nazv {
+        font-size: 5vw;
+        width: 80vw;
+    }
+    .ideasAll .ideas .podNazv {
+        font-size: 3vw;
+        width: 80vw;
+    }
+    .ideasAll .ideas .podpodNazv {
+        font-size: 3vw;
+        width: 80vw;
+    }
+    .headerAll {
+        padding-top: 3vh;
+        background-size: 250%;
+    }
+    .headerAll header ul li:nth-child(2) {
+        display: none;
+    }
+    .headerAll header div:nth-child(2) ul {
+        display: none;
+    }
+    .headerAll header div:nth-child(2) {
+        display: none;
+    }
+    main ul:nth-child(1) li:nth-child(1) {
+        font-size: 6vw;
+        font-weight: 800;
+    }
+    main ul:nth-child(1) {
+        width: 70vw;
+    }
+    main ul:nth-child(1) li:nth-child(2) {
+        font-size: 3vw;
+    }
+    main ul {
+        li:nth-child(3){
+            flex-direction: column;
+            display: flex;
+            height: auto;
+            row-gap: 1vh;
+            img {
+                width: 30vw;
+            }
+        }
+    }
+    .headerAll {
+        row-gap: 4vh;
+    }
+    .headerAll header ul {
+        column-gap: 15vw;
+    }
+    .headerAll header .forlogo img {
+        width: 40vw;
+    }
+}
+@media screen and (max-width:320px) {
+    .footerAll {
+        padding-bottom: 0;
+    }
+    .cardsContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        row-gap: 2vh;
+    }
+    .headerAll header div:nth-child(2) ul {
+        display: none;
+    }
+    main ul:nth-child(1) li:nth-child(1){
+        font-size: 4vw;
+        width: 80vw;
+    }
+    main ul:nth-child(1) li:nth-child(2) {
+        font-size: 2vw;
+        width: 60vw;
+    }
+    .headerAll header div:nth-child(2) {
+        display: none;
+    }
+    .headerAll {
+        background-size: 150%;
+        background-position: 50% 0%;
+    }
+    .headerAll header ul li form {
+        display: none;
+    }
+    .headerAll header ul {
+        column-gap: 10vw;
+    }
+    .headerAll header .forlogo img {
+        width: 35vw;
+    }
+    .product-card .basketButton img {
+        width: 15vw;
+    }
+    .product-card {
+        padding: 1vw;
+        width: calc(80% - 1vw); /* 2 карточки в ряд */
+        height: auto; /* автоматически регулируем высоту */
+        margin: 1vw;
+        p {
+            font-size: 4vw;
+        }
+        h2 {
+            font-size: 5vw;
+        }
+    }
+    .ideasAll .ideas {
+        text-align: center;
+    }
+    .ideasAll .ideas ul form input {
+        width: 100%;
+    }
+    .ideasAll .ideas ul button {
+        font-size: 6vw;
+    }
+    .ideasAll {
+        background-image: url('../MainPage/imgs/05.\ Уникальная\ идея\ мерча.png');
+        background-size: 160%;
+        background-position: 20% 10%;
+    }
+    .footerAll {
+        padding-top: 5vh;
+    }
+    main ul:nth-child(1) {
+        row-gap: 1vh;
+    }
+
+    main ul:nth-child(1) {
+        text-align: center;
+    }
+    .footerAll {
+        padding-top: 2vh;
+    }
+    .headerAll {
+        background-size: 500%;
+        background-position: 78% 100%;
+        padding-bottom: 50vh;
+    }
+    main ul:nth-child(1) li:nth-child(2) {
+        width: 70vw;
+        align-self: center;
+        font-size: 3vw;
+    }
+    main {
+        width: 80vw;
+        flex-direction: column;
+    }
+    main ul:nth-child(1) li:nth-child(1) {
+        width: 70vw;
+        align-self: center;
+        font-size: 6vw;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .pop-up-card-All {
+        left: 70px;
+        width: 90vw; /* увеличиваем ширину */
+        .table {
+            img {
+                width: 30vw;
+            }
+        }
+        .withButtonInfo {
+            padding: 1vw; /* увеличиваем отступы */
+        }
+        .closeInfoButton {
+            width: 45px; /* уменьшаем размер кнопки */
+            height: 45px; /* уменьшаем размер кнопки */
+            font-size: 1.5vw; /* уменьшаем текст */
+        }
+        #photomain {
+            width: 35vw; /* увеличиваем ширину изображения */
+        }
+        .opisanie {
+            padding: 1.5vw; /* уменьшаем отступы */
+            #opistovar {
+                width: 90%; /* увеличиваем ширину */
+            }
+            #price {
+                font-size: 1.5vw; /* увеличиваем текст */
+            }
+            #nazv{
+                font-size: 2.5vw; /* уменьшаем текст */
+            }
+        }
+        .withImg {
+            align-self: flex-start;
+            padding: 1.5vw; /* увеличиваем отступ */
+            ul {
+                column-gap: 2vw; /* увеличиваем промежуток */
+            }
+        }
+        .pop-up-card {
+            column-gap: 1.5vw; /* уменьшаем пробелы между элементами */
+        }
+    }
+
+    .razmer {
+        column-gap: 1.5vw; /* уменьшаем пробелы между колонками */
+        ul:nth-child(2) {
+            li {
+                column-gap: 4vw; /* уменьшаем расстояние между элементами */
+            }
+        }
+        ul:nth-child(1) {
+            li:nth-child(2) {
+                a {
+                    font-size: 1.2vw; /* уменьшаем размер текста */
+                }
+            }
+            li:nth-child(3), li:nth-child(4) {
+                button {
+                    padding: 3vw; /* уменьшаем отступы кнопки */
+                    font-size: 1.5vw; /* уменьшаем текст */
+                }
+            }
+        }
+        ul {
+            row-gap: 1.5vh; /* уменьшаем расстояние между элементами */
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pop-up-card-All .withImg ul {
+        img {
+            width: 10vw;
+        }
+    }
+    .pop-up-card-All {
+        left: 20px;
+        width: 95vw; /* еще больше увеличиваем ширину */
+        .withButtonInfo {
+            padding: 1.5vw; /* увеличиваем отступы */
+        }
+        .closeInfoButton {
+            width: 40px; /* уменьшаем размер кнопки */
+            height: 40px; /* уменьшаем размер кнопки */
+            font-size: 1.3vw; /* уменьшаем текст */
+        }
+        #photomain {
+            width: 35vw; /* значительно увеличиваем ширину изображения */
+        }
+        .opisanie {
+            padding: 1vw; /* увеличиваем отступы */
+            #opistovar {
+                width: 95%; /* увеличиваем ширину */
+            }
+            #price {
+                font-size: 1.8vw; /* увеличиваем текст */
+            }
+            #nazv{
+                font-size: 2vw; /* уменьшаем текст */
+            }
+        }
+        .withImg {
+            padding: 1.5vw; /* увеличиваем отступ */
+            ul {
+                column-gap: 1.5vw; /* уменьшаем промежуток */
+            }
+        }
+        .pop-up-card {
+            column-gap: 1vw; /* уменьшаем пробелы между элементами */
+        }
+    }
+
+    .razmer {
+        column-gap: 1vw; /* уменьшаем пробелы между колонками */
+        ul:nth-child(2) {
+            li {
+                column-gap: 3vw; /* уменьшаем расстояние между элементами */
+            }
+        }
+        ul:nth-child(1) {
+            li:nth-child(2) {
+                a {
+                    font-size: 1vw; /* уменьшаем размер текста */
+                }
+            }
+            li:nth-child(3), li:nth-child(4) {
+                button {
+                    padding: 2.5vw; /* уменьшаем отступы кнопки */
+                    font-size: 2vw; /* уменьшаем текст */
+                }
+            }
+        }
+        ul {
+            row-gap: 1vh; /* уменьшаем расстояние между элементами */
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .pop-up-card-All{
+        left: 10px;
+    }
+    .pop-up-card-All .pop-up-card {
+        flex-direction: column;
+    }
+    .pop-up-card-All #photomain {
+        object-fit: cover;
+        width: 90vw;
+        height: 20vh;
+    }
+    .pop-up-card-All .opisanie {
+        .table {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .pop-up-card-All .withImg ul {
+        display: none;
+    }
+    .razmer ul:nth-child(1) li:nth-child(3) button, .razmer ul:nth-child(1) li:nth-child(4) button {
+        font-size: 6vw;
+    }
+    .razmer ul:nth-child(2){
+        display: none;
+    }
+    .razmer ul li {
+        display: flex;
+        align-items: center;
+        align-self: center;
+    }
+    .razmer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pop-up-card-All .opisanie {
+        .table {
+            display: none;
+        }
+    }
+    .pop-up-card-All .opisanie #nazv {
+        font-size: 5vw;
+    }
+    .razmer ul:nth-child(1) li:nth-child(2) {
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .oformlenieAll {
+        left: 70px;
+        width: 80vw; /* увеличиваем ширину */
+        padding: 2vw; /* увеличиваем отступы */
+        
+        .tovarImg {
+            width: 7vw; /* увеличиваем ширину изображения */
+        }
+
+        .vsego {
+            font-size: 1.5vw; /* уменьшаем размер шрифта */
+        }
+
+        .spravaOform {
+            padding-left: 1.5vw; /* уменьшаем отступ */
+            
+            .sprava {
+                padding-bottom: 1vh;
+                
+                .korz {
+                    p {
+                        font-size: 1.5vw; /* уменьшаем текст */
+                    }
+                }
+
+                .spravaInfo {
+                    column-gap: 1.5vw; /* уменьшаем промежуток */
+                    
+                    ul {
+                        li {
+                            button {
+                                width: 15px; /* уменьшаем размер кнопок */
+                                height: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .oformlenie {
+            column-gap: 1.5vh; /* уменьшаем промежуток */
+            .slevaOform {
+                button {
+                    font-size: 0.9vw; /* уменьшаем текст */
+                }
+
+                form {
+                    width: 25vw; /* увеличиваем ширину формы */
+                    input {
+                        font-size: 0.9vw; /* уменьшаем текст */
+                    }
+                }
+
+                ul {
+                    li:nth-child(1) {
+                        font-size: 1.5vw; /* уменьшаем текст */
+                    }
+                    li:nth-child(2) {
+                        font-size: 0.8vw; /* уменьшаем текст */
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .oformlenieAll .oformlenie .slevaOform ul li:nth-child(7) {
+        font-size: 2vw;
+    }
+    .oformlenieAll .oformlenie .slevaOform ul li {
+        width: 100%;
+    }
+    .oformlenieAll {
+        left: 20px;
+        width: 90vw; /* еще больше увеличиваем ширину */
+        padding: 2.5vw; /* увеличиваем отступы */
+        
+        .tovarImg {
+            width: 10vw; /* значительно увеличиваем ширину изображения */
+        }
+
+        .vsego {
+            font-size: 2vw; /* уменьшаем размер шрифта */
+        }
+
+        .spravaOform {
+            padding-left: 1vw; /* уменьшаем отступ */
+            
+            .sprava {
+                padding-bottom: 0.5vh; /* уменьшаем отступ */
+                
+                .korz {
+                    p {
+                        font-size: 4vw; /* уменьшаем текст */
+                    }
+                }
+
+                .spravaInfo {
+                    column-gap: 1vw; /* уменьшаем промежутки */
+                    
+                    ul {
+                        li {
+                            button {
+                                width: 12px; /* уменьшаем размер кнопок */
+                                height: 12px; /* уменьшаем размер кнопок */
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .oformlenie {
+            column-gap: 1vh; /* уменьшаем промежуток */
+            .slevaOform {
+                button {
+                    padding: 3vw; /* уменьшаем отступы */
+                    font-size: 2vw; /* уменьшаем текст */
+                }
+
+                form {
+                    width: 30vw; /* увеличиваем ширину формы */
+                    input {
+                        font-size: 2vw; /* уменьшаем текст */
+                    }
+                }
+
+                ul {
+                    li:nth-child(1) {
+                        font-size: 3vw; /* уменьшаем текст */
+                    }
+                    li:nth-child(2) {
+                        font-size: 2vw; /* уменьшаем текст */
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .footerAll footer {
+        flex-direction: row; /* Сохранить рядное размещение */
+        justify-content: space-between; /* Сохранить равные отступы */
+    }
+
+    .footerAll footer .nazv {
+        font-size: 1.5vw; /* Уменьшение размера шрифта */
+    }
+
+    .footerAll footer ul {
+        width: 30vw; /* Уменьшение ширины списков */
+    }
+
+    .footerAll footer form input {
+        width: 40vw; /* Уменьшение ширины поля ввода */
+    }
+}
+
+@media (max-width: 480px) {
+    .footerAll footer {
+        flex-direction: row; /* Сохраняем рядное размещение */
+        justify-content: space-between; /* Поддерживаем равномерные отступы */
+    }
+
+    .footerAll footer .nazv {
+        font-size: 2vw; /* Увеличение размера шрифта для улучшения читаемости */
+    }
+
+    .footerAll footer ul {
+        width: 40vw; /* Увеличение ширины списков */
+    }
+
+    .footerAll footer form input {
+        width: 60vw; /* Увеличение ширины поля ввода */
+    }
+
+    .footerAll .reserved {
+        font-size: 1.2vw; /* Увеличение шрифта для читаемости */
+    }
+}

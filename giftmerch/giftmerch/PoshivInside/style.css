@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -498,4 +499,308 @@ main .Snazv li:nth-child(2) {
 }
 .footerAll footer ul:nth-child(1) li:nth-child(2) {
   width: 20vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .headerAll {
+    row-gap: 3vh;
+    padding-top: 4vh;
+    background-size: 120%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .ideasAll {
+    padding-top: 12vh;
+  }
+  .footerAll {
+    padding-bottom: 0;
+  }
+  .questionsAll {
+    padding-top: 5vh; /* уменьшаем отступ сверху */
+  }
+  .questionsAll .ques {
+    width: 90vw; /* увеличиваем ширину блока вопросов */
+  }
+  .questionsAll .forHoodieImg img {
+    width: 30vw; /* увеличиваем ширину изображения */
+  }
+  .questionsAll .questions {
+    width: 50vw; /* увеличиваем ширину вопросов */
+  }
+  .questionsAll .questions .kakzakaz {
+    padding-bottom: 2vh; /* уменьшаем отступ снизу */
+  }
+  .questionsAll .questions ul {
+    padding-bottom: 2vh; /* уменьшаем отступ снизу */
+  }
+  .questionsAll .questions .withNazv {
+    font-size: 1.3vw; /* уменьшаем размер шрифта */
+  }
+  .questionsAll .questions .withNazv img {
+    width: 1.2vw; /* увеличиваем размер изображения */
+  }
+}
+@media screen and (max-width: 768px) {
+  .ideasAll {
+    background-size: 170%;
+    background-position: 40% 10%;
+  }
+  .ideasAll .ideas .nazv {
+    font-size: 3vw;
+  }
+  .ideasAll .ideas ul {
+    flex-direction: column;
+    align-self: flex-end;
+    position: relative;
+    top: -100px;
+  }
+  .ideasAll .ideas ul form {
+    width: 40vw;
+  }
+  .ideasAll .ideas .podNazv {
+    font-size: 1.5vw;
+  }
+  .ideasAll {
+    padding-bottom: 0;
+  }
+  .ideasAll .ideas .podpodNazv {
+    font-size: 2vw;
+  }
+  .footerAll {
+    padding-bottom: 0;
+  }
+  .headerAll {
+    background-size: 150%;
+    background-position: 50% 10%;
+  }
+  main ul:nth-child(1) li:nth-child(2) {
+    font-size: 2vw;
+    width: 100%;
+  }
+  main .proschet ul:nth-child(1) li {
+    font-size: 2vw;
+  }
+  .headerAll header div:nth-child(2) ul {
+    width: auto;
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
+  }
+  .headerAll {
+    background-size: 150%;
+    background-position: 50% 0%;
+  }
+  .headerAll header div:nth-child(2) ul button {
+    font-size: 1.8vw;
+  }
+  .questionsAll {
+    flex-direction: column; /* меняем направление на колонку */
+    align-items: center; /* выравниваем элементы по началу */
+    padding-top: 4vh; /* уменьшаем отступ сверху */
+  }
+  .questionsAll .ques {
+    width: 95vw; /* увеличиваем ширину блока вопросов */
+    flex-direction: column; /* делаем блоки вопросов вертикально */
+    align-items: flex-start; /* выравниваем элементы по началу */
+  }
+  .questionsAll .forHoodieImg img {
+    width: 90vw;
+    height: 40vh;
+    -o-object-fit: cover;
+       object-fit: cover; /* увеличиваем ширину изображения */
+  }
+  .questionsAll .questions {
+    width: 100%; /* делаем ширину вопросов полной */
+  }
+  .questionsAll .questions .kakzakaz {
+    padding-bottom: 1vh; /* уменьшаем отступ снизу */
+  }
+  .questionsAll .questions ul {
+    padding-bottom: 1vh; /* уменьшаем отступ снизу */
+  }
+  .questionsAll .questions .withNazv {
+    font-size: 2vw; /* уменьшаем размер шрифта */
+  }
+  .questionsAll .questions .withNazv img {
+    width: 1.5vw; /* увеличиваем размер изображения */
+  }
+}
+@media (max-width: 480px) {
+  .headerAll {
+    padding-top: 3vh;
+  }
+  .headerAll header ul li:nth-child(2) {
+    display: none;
+  }
+  .headerAll header div:nth-child(2) ul {
+    display: none;
+  }
+  .headerAll header div:nth-child(2) {
+    display: none;
+  }
+  main ul:nth-child(1) li:nth-child(1) {
+    font-size: 6vw;
+    font-weight: 800;
+  }
+  main ul:nth-child(1) {
+    width: 70vw;
+  }
+  main ul:nth-child(1) li:nth-child(2) {
+    font-size: 3vw;
+  }
+  main ul li:nth-child(3) {
+    flex-direction: column;
+    display: flex;
+    height: auto;
+    row-gap: 1vh;
+  }
+  main ul li:nth-child(3) img {
+    width: 30vw;
+  }
+  .headerAll {
+    row-gap: 4vh;
+  }
+  .headerAll header ul {
+    -moz-column-gap: 15vw;
+         column-gap: 15vw;
+  }
+  .headerAll header .forlogo img {
+    width: 40vw;
+  }
+  .headerAll header div:nth-child(2) ul {
+    display: none;
+  }
+  .headerAll header div:nth-child(2) {
+    display: none;
+  }
+  .questionsAll {
+    flex-direction: column;
+    align-items: center;
+  }
+  .questionsAll .ques {
+    width: 90vw;
+  }
+  .questionsAll .forHoodieImg img {
+    width: 90vw;
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .questionsAll .questions {
+    width: 90vw;
+  }
+  main .proschet ul:nth-child(1) li a {
+    font-size: 2vw;
+  }
+  .questionsAll .questions .withNazv {
+    font-size: 4vw;
+  }
+  main .proschet ul:nth-child(1) li button {
+    font-size: 3vw;
+  }
+  main .proschet ul:nth-child(2) {
+    display: none;
+  }
+  main .proschet ul:nth-child(3) li a {
+    display: none;
+  }
+  .ideasAll .ideas ul {
+    position: inherit;
+    align-self: flex-start;
+    height: auto;
+    row-gap: 2vh;
+  }
+  .ideasAll .ideas ul form {
+    width: 80vw;
+  }
+  .ideasAll {
+    background-image: url("../MainPage/imgs/Group 1 (31).png");
+    padding-top: 25vh;
+    background-size: 130%;
+  }
+  .ideasAll .ideas ul button {
+    font-size: 3vw;
+    padding: 2vw;
+    padding-right: 14vw;
+    padding-left: 14vw;
+  }
+  .ideasAll .ideas .nazv {
+    font-size: 5vw;
+    width: 80vw;
+  }
+  .ideasAll .ideas .podNazv {
+    font-size: 3vw;
+    width: 80vw;
+  }
+  .ideasAll .ideas .podpodNazv {
+    font-size: 3vw;
+    width: 80vw;
+  }
+}
+@media (max-width: 320px) {
+  .ideasAll .ideas {
+    text-align: center;
+  }
+  .ideasAll .ideas ul form input {
+    width: 100%;
+  }
+  .ideasAll .ideas ul button {
+    font-size: 6vw;
+  }
+  .questionsAll .questions .withNazv {
+    text-align: center;
+    justify-content: center;
+  }
+  .ideasAll {
+    background-image: url("../MainPage/imgs/05. Уникальная идея мерча.png");
+    background-size: 160%;
+    background-position: 20% 10%;
+  }
+  .questionsAll .questions .withNazv {
+    font-size: 5vw;
+  }
+  .headerAll {
+    padding-top: 2vh;
+    background-size: 300%;
+    background-position: 80% 40%;
+    padding-bottom: 10vh;
+  }
+  .questionsAll .forHoodieImg img {
+    width: 80vw;
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 768px) {
+  .footerAll footer {
+    flex-direction: row; /* Сохранить рядное размещение */
+    justify-content: space-between; /* Сохранить равные отступы */
+  }
+  .footerAll footer .nazv {
+    font-size: 1.5vw; /* Уменьшение размера шрифта */
+  }
+  .footerAll footer ul {
+    width: 30vw; /* Уменьшение ширины списков */
+  }
+  .footerAll footer form input {
+    width: 40vw; /* Уменьшение ширины поля ввода */
+  }
+}
+@media (max-width: 480px) {
+  .footerAll footer {
+    flex-direction: row; /* Сохраняем рядное размещение */
+    justify-content: space-between; /* Поддерживаем равномерные отступы */
+  }
+  .footerAll footer .nazv {
+    font-size: 2vw; /* Увеличение размера шрифта для улучшения читаемости */
+  }
+  .footerAll footer ul {
+    width: 40vw; /* Увеличение ширины списков */
+  }
+  .footerAll footer form input {
+    width: 60vw; /* Увеличение ширины поля ввода */
+  }
+  .footerAll .reserved {
+    font-size: 1.2vw; /* Увеличение шрифта для читаемости */
+  }
 }/*# sourceMappingURL=style.css.map */

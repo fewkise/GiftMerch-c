@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -23,7 +24,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  padding-bottom: 10vh;
+  padding-bottom: 15vh;
 }
 .headerAll header {
   display: flex;
@@ -362,4 +363,178 @@ main ul:nth-child(1) li:nth-child(2) {
 }
 .footerAll footer ul:nth-child(1) li:nth-child(2) {
   width: 20vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .headerAll {
+    row-gap: 3vh;
+    padding-top: 1vh;
+    background-size: 110%;
+  }
+  .footerAll {
+    padding-bottom: 0;
+  }
+  .whatWeMade .cardsContainer ul {
+    flex-wrap: wrap; /* Добавляем перенос рядов */
+    justify-content: flex-start; /* Выравнивание по левому краю */
+  }
+  .whatWeMade .cardsContainer li {
+    width: calc(33.33% - 1vw); /* Ширина для 3 фото в строке с учетом отступов */
+  }
+  .priceAll {
+    /* Последний элемент занимает оставшуюся ширину */
+  }
+  .priceAll .price ul {
+    width: 100%; /* Убираем фиксированную ширину */
+    flex-wrap: wrap; /* Добавляем перенос рядов */
+  }
+  .priceAll .price ul li {
+    width: calc(50% - 1vw); /* Ширина для 2 фото в строке с учетом отступов */
+  }
+  .priceAll .price ul:last-child {
+    width: 100%; /* Выровнять последний элемент по левому краю */
+    margin-left: 0; /* Убираем центрирование */
+  }
+}
+@media screen and (max-width: 768px) {
+  .priceAll .price {
+    flex-direction: column;
+  }
+  .priceAll .price ul li:nth-child(2) {
+    width: 80vw;
+    font-size: 2vw;
+  }
+  .whatWeMadeAll .whatWeMade img {
+    width: 40vw;
+  }
+  .headerAll {
+    background-size: 130%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .headerAll header div:nth-child(2) ul {
+    display: none;
+  }
+  main ul:nth-child(1) li:nth-child(1) {
+    font-size: 4vw;
+    width: 80vw;
+  }
+  main ul:nth-child(1) li:nth-child(2) {
+    font-size: 2vw;
+    width: 60vw;
+  }
+  .headerAll header div:nth-child(2) {
+    display: none;
+  }
+  .headerAll {
+    background-size: 150%;
+    background-position: 50% 0%;
+  }
+  .headerAll header ul li form {
+    display: none;
+  }
+  .headerAll header ul {
+    -moz-column-gap: 10vw;
+         column-gap: 10vw;
+  }
+  .headerAll header .forlogo img {
+    width: 35vw;
+  }
+  .whatWeMadeAll .nazv {
+    font-size: 4vw;
+  }
+  .whatWeMadeAll .whatWeMade {
+    row-gap: 2vh;
+  }
+  .whatWeMadeAll .podNazv {
+    font-size: 2vw;
+  }
+  .whatWeMadeAll .whatWeMade .cardsContainer ul li {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 320px) {
+  main button {
+    font-size: 5vw;
+    position: relative;
+    top: 400px;
+    padding: 1vw;
+    width: 100%;
+  }
+  main ul:nth-child(1) {
+    row-gap: 1vh;
+  }
+  main ul:nth-child(1) {
+    text-align: center;
+  }
+  .whatWeMadeAll .nazv {
+    font-size: 6vw;
+  }
+  .whatWeMadeAll .podNazv {
+    font-size: 4vw;
+  }
+  .whatWeMadeAll .whatWeMade .cardsContainer ul li {
+    font-size: 4vw;
+  }
+  .priceAll .price ul li:nth-child(2) {
+    font-size: 3vw;
+  }
+  .priceAll .price ul li:nth-child(1) {
+    font-size: 5vw;
+  }
+  .footerAll {
+    padding-top: 2vh;
+  }
+  .headerAll {
+    background-size: 500%;
+    background-position: 78% 100%;
+    padding-bottom: 50vh;
+  }
+  main ul:nth-child(1) li:nth-child(2) {
+    width: 70vw;
+    align-self: center;
+    font-size: 3vw;
+  }
+  main {
+    width: 80vw;
+    flex-direction: column;
+  }
+  main ul:nth-child(1) li:nth-child(1) {
+    width: 70vw;
+    align-self: center;
+    font-size: 6vw;
+  }
+}
+@media (max-width: 768px) {
+  .footerAll footer {
+    flex-direction: row; /* Сохранить рядное размещение */
+    justify-content: space-between; /* Сохранить равные отступы */
+  }
+  .footerAll footer .nazv {
+    font-size: 1.5vw; /* Уменьшение размера шрифта */
+  }
+  .footerAll footer ul {
+    width: 30vw; /* Уменьшение ширины списков */
+  }
+  .footerAll footer form input {
+    width: 40vw; /* Уменьшение ширины поля ввода */
+  }
+}
+@media (max-width: 480px) {
+  .footerAll footer {
+    flex-direction: row; /* Сохраняем рядное размещение */
+    justify-content: space-between; /* Поддерживаем равномерные отступы */
+  }
+  .footerAll footer .nazv {
+    font-size: 2vw; /* Увеличение размера шрифта для улучшения читаемости */
+  }
+  .footerAll footer ul {
+    width: 40vw; /* Увеличение ширины списков */
+  }
+  .footerAll footer form input {
+    width: 60vw; /* Увеличение ширины поля ввода */
+  }
+  .footerAll .reserved {
+    font-size: 1.2vw; /* Увеличение шрифта для читаемости */
+  }
 }/*# sourceMappingURL=style.css.map */
