@@ -78,6 +78,7 @@
             button:nth-child(1) {
                 width: auto;
                 padding: 0.7vw;
+                
                 padding-right: 2vw;
                 padding-left: 2vw;
                 border-radius: 25px;
@@ -90,19 +91,135 @@
                 border: none;
                 font-size: 1vw;
                 background: transparent;
+                
+            }
+        }
+        #button_menu {
+                    display: none; 
+                    position: absolute;
+                    top: 10vh;
+                    background-color: #222227;
+                    width: 10vw;
+                    left: 22vw;
+                    height: 55vh;
+                    ul{  
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: start;
+                        flex-direction: column;
+                        height: 50vh;
+                        padding: 5px 5px 40px 5px; 
+                        li{
+                            height: 8vh;
+                            width: 100%;
+                            button{
+                                max-width: 10vw;
+                                font-size: 0.9rem;
+                                color: #fff;
+                                font-weight: bold;
+                                width: 100%;
+                                height: 100%;
+                                text-align: left;
+                                border-radius: 0;
+                                &:hover{
+                                    background-color: #fff;
+                                    color:#524983;
+                                }
+                            }
+                        }
+                    }
+                }
+        #button_menu2 {
+            display: none; 
+            position: absolute;
+            top: 17.9vh;
+            background-color: #222227;
+            width: 10vw;
+            left: 33vw;
+            height: 80vh;
+            ul{  
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                flex-direction: column;
+                height: 50vh;
+                padding: 5px 5px 40px 5px; 
+                li{
+                    height: 8vh;
+                    width: 100%;
+                    &:nth-child(10){
+                        height: 15vh;
+                    }
+                    button{
+                        font-size: 0.9rem;
+                        color: #fff;
+                        font-weight: bold;
+                        width: 100%;
+                        height: 100%;
+                        text-align: left;
+                        border-radius: 0;
+                        &:hover{
+                            background-color: #fff;
+                            color:#524983;
+                        }
+                    }
+                }
+            }
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0;
+            li{
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                a{
+                    
+                    width: 100%;
+                    height: 100%;
+                    button{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 0;
+                    }
+                }
+                &:hover{ 
+                    background-color: black;
+                    a{
+                        button{
+                            font-size: 0.7rem; 
+                            color: #fff;
+                        }
+                    }
+                    &::after{
+                        content: '';
+                        position: relative;
+                        bottom: -13px;
+                        width: 100%;
+                        left: 0;
+                        height: 4px;
+                        border-radius: 6px;
+                        background-color: black;
+                    }
+                }
             }
         }
         ul {
             display: flex;
+            
             justify-content: space-around;
             align-items: center;
             width: auto;
             column-gap: 5vw;
             li {
                 display: flex;
+                
                 align-items: center;
                 justify-content: space-around;
                 form {
+                    
                     display: flex;
                     align-items: center;
                     justify-content: flex-start;

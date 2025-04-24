@@ -18,20 +18,45 @@
                 </ul>
             </div>
             <div>
-                <ul>
+                <ul class="nav">
                     <li><a href="../Nabori/index.html"><button>Наборы</button></a></li>
-                    <li><a href="../AllItems/index.html"><button>Все товары</button></a></li>
+                    <li><a ><button onclick="open_menu()">Все товары</button></a></li>
                     <li><a href="../PoshivPage/"><button>Пошив</button></a></li>
                     <li><a href="../Proizvodstvo/index.html"><button>Производство</button></a></li>
                     <li><a href="../AboutUs/index.html"><button>Информация</button></a></li>
                     <li>ШОППЕРЫ СО СКИДКОЙ -25%</li>
                 </ul>
+                <div id="button_menu">
+                    <ul>
+                        <li><button>Одежда</button></li>
+                        <li><button onclick="open_menu2()">Сумки и аксессуары</button></li>
+                        <li><button>Для офиса</button></li>
+                        <li><button>Посуда</button></li>
+                        <li><button>Отдых</button></li>
+                        <li><button>Вкусности</button></li>
+                        <li><button>Электроника</button></li>
+                    </ul>
+                </div>
+                <div id="button_menu2">
+                    <ul>
+                        <li><button>-Рюкзак</button></li>
+                        <li><button>-Сумка/Экосумка</button></li>
+                        <li><button>-Бананка</button></li>
+                        <li><button>-Шапка</button></li>
+                        <li><button>-Кепка</button></li>
+                        <li><button>-Маска для сна</button></li>
+                        <li><button>-Защитная маска</button></li>
+                        <li><button>-Значки/Пины</button></li>
+                        <li><button>-Брелки</button></li>
+                        <li><button>-Обложка на паспорт/тревелкейс/кардхолдер</button></li>
+                    </ul>
+                </div>
             </div>
         </header>
         <main>
             <ul>
                 <li>СВЕЖЕЕ ДЫХАНИЕ В КОРПОРАТИВНОЙ ЖИЗНИ</li>
-                <li>Ми вдосконалили процес замовлення продукції для того, щоб Ви і Ваша компанія сконцентрувались на основних задачах  і досягали поставлених цілей.</li>
+                <li>Ми вдосконалили процес замовлення продукції для того, щоб Ви і Ваша компанія сконцентрувались на основних задачах і досягали поставлених цілей.</li>
                 <li><img src="imgs/preference 1.png" draggable="false" alt=""><img src="imgs/preference 2.png" draggable="false" alt=""><img src="imgs/preference 3.png" draggable="false" alt=""></li>
             </ul>
             <ul id="photo">
@@ -136,7 +161,7 @@
         <footer>
             <ul>
                 <li><a href=""><img src="imgs/logo.svg" alt=""></a></li>
-                <li><p>Свежее дыхание в корпоративной жизни и жизни корпоративной дыхание свежее </p></li>
+                <li><p>Свежее дыхание в корпоративной жизнии жизни корпоративной дыхание свежее </p></li>
                 <li><p>+380 630 130 103</p><p>example@gmail.com</p></li>
                 <li><a href=""><img src="imgs/Facebook - Original.png" alt=""></a><a href=""><img src="imgs/Instagram - Original.png" alt=""></a><a href=""><img src="imgs/LinkedIn - Original.png" alt=""></a></li>
             </ul>
@@ -165,5 +190,23 @@
     </section>
 
     <script src="app.js"></script>
+    <script>
+        function open_menu() {
+            const button_menu = document.getElementById('button_menu');
+            if (button_menu.style.display === 'none' || button_menu.style.display === '') {
+                button_menu.style.display = 'flex'; 
+            } else {
+                button_menu.style.display = 'none'; 
+            }
+        }
+        function open_menu2() {
+            const button_menu2 = document.getElementById('button_menu2');
+            if (button_menu2.style.display === 'none' || button_menu2.style.display === '') {
+                button_menu2.style.display = 'flex'; 
+            } else {
+                button_menu2.style.display = 'none'; 
+            }
+        }
+    </script>
 </body>
 </html>
